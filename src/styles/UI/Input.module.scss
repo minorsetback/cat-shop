@@ -1,0 +1,84 @@
+.input__group {
+      padding-top: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.input,
+.textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #282828;
+  border-radius: 0;
+  color: #000;
+  font-family: "NeueHaasUnicaLight";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  outline: none;
+  padding: 0;
+  transition: background-color 0.2s ease-in;
+  width: 100%;
+  padding-top: 5px;
+}
+
+.clear__button {
+  float: right;
+  font-family: "NeueHaasUnicaThin";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 20px;
+  line-height: 10px;
+  text-align: right;
+  text-decoration-line: underline;
+  border: none;
+  background: transparent;
+  border-radius: none;
+  color: #4b4b4b;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+.input__label,
+.select__label,
+.textarea__label {
+  color: #606060;
+  cursor: text;
+  font-family: "NeueHaasUnicaUltraLight";
+  font-size: 25px;
+  font-weight: 200;
+  left: 6px;
+  margin-top: 6px;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.select__label {
+  color: #424141;
+  transform: translateY(140%);
+  font-size: 20px;
+}
+
+.input:focus + .input__label,
+.input:valid + .input__label {
+  color: #606060;
+  transform: translateY(170%);
+  font-size: 20px;
+  left: 0;
+}
+
+.textarea:focus + .textarea__label,
+.textarea:valid + .textarea__label {
+  color: #606060;
+  transform: translateY(340%);
+  font-size: 20px;
+  left: 0;
+}

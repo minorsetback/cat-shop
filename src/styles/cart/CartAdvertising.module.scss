@@ -1,0 +1,58 @@
+.advertising {
+  background: #fffbec;
+  border: 1px solid #9e9e9e;
+  border-radius: 9px;
+  height: 241px;
+  padding: 13px;
+  margin-top: 45px;
+  margin-bottom: 92px;
+}
+
+.advertising__title {
+  font-family: "NeueHaasUnicaBold";
+  font-style: normal;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+
+.advertising__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advetising__image {
+  margin-top: 20px;
+}
+
+.adverising__contentText {
+  width: 152px;
+}
+
+.advertising__desc {
+  font-family: "NeueHaasUnicaThin";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10;
+}
+
+.advertising__newPrice {
+  font-family: "NeueHaasUnicaLight";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 25px;
+  margin-right: 10px;
+}
+
+.advertising__oldPrice {
+  font-family: "NeueHaasUnicaThin";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: line-through;
+}

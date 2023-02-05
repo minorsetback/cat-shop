@@ -1,0 +1,62 @@
+.item {
+  padding: 0 10px 15px 4px;
+  display: flex;
+  border-bottom: 0.5px dashed #000000;
+}
+
+.item__image {
+  display: flex;
+  align-items: center;
+  padding: 0 24px 0 5px;
+}
+
+.item__pricing {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.item__title {
+  font-family: "NeueHaasUnicaThin";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.item__counter {
+  display: flex;
+  border: 0.5px solid #000000;
+  border-radius: 3px;
+}
+
+.item__decrement,
+.item__decrement {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: "NeueHaasUnicaThin";
+  font-size: 20px;
+}
+
+.item__count {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item__price {
+  font-family: "NeueHaasUnicaLight";
+  font-style: normal;
+  font-size: 18px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

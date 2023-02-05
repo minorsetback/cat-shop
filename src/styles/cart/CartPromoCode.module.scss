@@ -1,0 +1,71 @@
+.promo {
+  text-align: center;
+  margin-top: 27px;
+  margin-bottom: 44px;
+}
+
+.promo__text,
+.promo__enter {
+  font-family: "NeueHaasUnicaThin";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+
+.promo__enter {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.promo__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.promo__button {
+  font-family: "NeueHaasUnicaMedium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  background: #f1eee9;
+  border: 1px solid #a0a0a0;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+.promo__input,
+.promo__input::placeholder {
+  font-family: "NeueHaasUnicaLight";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  padding: 7px 8px;
+}
+.promo__input {
+  border: 1px solid #a0a0a0;
+  border-radius: 2px;
+  width: 203px;
+}
+
+.promo__code {
+  background: #f1eee9;
+  border-radius: 12px;
+  padding: 2px 9px;
+  margin-right: 10px;
+}
+
+.promo__codes {
+  overflow-x: auto;
+}
+
+.promo__codes::-webkit-scrollbar {
+  display: none;
+}

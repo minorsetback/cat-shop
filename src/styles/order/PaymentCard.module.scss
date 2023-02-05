@@ -1,0 +1,13 @@
+.payment {
+  width: 100%;
+  height: 50px;
+  gap: 30px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #000000;
+  align-items: center;
+}
+
+.payment:last-child {
+  border-bottom: none;
+}
+

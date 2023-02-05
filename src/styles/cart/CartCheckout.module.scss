@@ -1,0 +1,48 @@
+.checkout__block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+
+.checkout__title {
+  font-family: "NeueHaasUnicaThin";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.checkout__price {
+  font-family: "NeueHaasUnicaLight";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 13px;
+}
+
+.checkout__currency {
+  font-family: "NeueHaasUnicaRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  color: #939393;
+  margin-right: 10px;
+}
+
+.checkout__total {
+  font-family: "NeueHaasUnicaMedium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.checkout__totalPrice {
+  font-family: "NeueHaasUnicaMedium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 25px;
+}

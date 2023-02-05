@@ -1,0 +1,159 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3867246, 2020-12-16T11:57:38-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Neue Haas Unica Ultra Light by Linotype
+ * URL: https://www.myfonts.com/products/ultra-light-neue-haas-unica-368760
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Thin by Linotype
+ * URL: https://www.myfonts.com/products/thin-neue-haas-unica-368765
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Light by Linotype
+ * URL: https://www.myfonts.com/products/light-neue-haas-unica-368770
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Heavy by Linotype
+ * URL: https://www.myfonts.com/products/heavy-neue-haas-unica-368777
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Regular by Linotype
+ * URL: https://www.myfonts.com/products/regular-neue-haas-unica-368782
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Medium by Linotype
+ * URL: https://www.myfonts.com/products/medium-neue-haas-unica-368788
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Bold by Linotype
+ * URL: https://www.myfonts.com/products/bold-neue-haas-unica-368792
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Black by Linotype
+ * URL: https://www.myfonts.com/products/black-neue-haas-unica-368796
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Extra Black by Linotype
+ * URL: https://www.myfonts.com/products/extra-black-neue-haas-unica-368802
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Black Italic by Linotype
+ * URL: https://www.myfonts.com/products/black-italic-neue-haas-unica-370411
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Bold Italic by Linotype
+ * URL: https://www.myfonts.com/products/bold-italic-neue-haas-unica-370416
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Heavy Italic by Linotype
+ * URL: https://www.myfonts.com/products/heavy-italic-neue-haas-unica-370418
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Italic by Linotype
+ * URL: https://www.myfonts.com/products/italic-neue-haas-unica-370424
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Light Italic by Linotype
+ * URL: https://www.myfonts.com/products/light-italic-neue-haas-unica-370429
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Medium Italic by Linotype
+ * URL: https://www.myfonts.com/products/medium-italic-neue-haas-unica-370433
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Thin Italic by Linotype
+ * URL: https://www.myfonts.com/products/thin-italic-neue-haas-unica-370437
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Extra Black Italic by Linotype
+ * URL: https://www.myfonts.com/products/extra-black-italic-neue-haas-unica-370444
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Neue Haas Unica Ultra Light Italic by Linotype
+ * URL: https://www.myfonts.com/products/ultra-light-italic-neue-haas-unica-370446
+ * Copyright: Copyright © 2023 Monotype Imaging Inc. All rights reserved.
+ * 
+ * © 2023 MyFonts Inc. */
+
+
+  
+@font-face {
+  font-family: "NeueHaasUnicaUltraLightItalic";
+  src: url('webFonts/NeueHaasUnicaUltraLightItalic/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaUltraLightItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaHeavy";
+  src: url('webFonts/NeueHaasUnicaHeavy/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaHeavy/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaLight";
+  src: url('webFonts/NeueHaasUnicaLight/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaLightItalic";
+  src: url('webFonts/NeueHaasUnicaLightItalic/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaLightItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaMediumItalic";
+  src: url('webFonts/NeueHaasUnicaMediumItalic/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaMediumItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaBold";
+  src: url('webFonts/NeueHaasUnicaBold/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaRegular";
+  src: url('webFonts/NeueHaasUnicaRegular/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaBoldItalic";
+  src: url('webFonts/NeueHaasUnicaBoldItalic/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaBoldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaThinItalic";
+  src: url('webFonts/NeueHaasUnicaThinItalic/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaThinItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaUltraLight";
+  src: url('webFonts/NeueHaasUnicaUltraLight/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaUltraLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaItalic";
+  src: url('webFonts/NeueHaasUnicaItalic/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaExtraBlackItalic";
+  src: url('webFonts/NeueHaasUnicaExtraBlackItalic/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaExtraBlackItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaMedium";
+  src: url('webFonts/NeueHaasUnicaMedium/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaMedium/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaThin";
+  src: url('webFonts/NeueHaasUnicaThin/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaThin/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaBlack";
+  src: url('webFonts/NeueHaasUnicaBlack/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaBlack/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaExtraBlack";
+  src: url('webFonts/NeueHaasUnicaExtraBlack/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaExtraBlack/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaBlackItalic";
+  src: url('webFonts/NeueHaasUnicaBlackItalic/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaBlackItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeueHaasUnicaHeavyItalic";
+  src: url('webFonts/NeueHaasUnicaHeavyItalic/font.woff2') format('woff2'), url('webFonts/NeueHaasUnicaHeavyItalic/font.woff') format('woff');
+}
+
