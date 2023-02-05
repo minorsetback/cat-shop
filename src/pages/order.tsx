@@ -16,10 +16,12 @@ import "react-phone-number-input/style.css";
 import Image from "next/image";
 import { useContext, useEffect, useRef, useState } from "react";
 import { GlobalContext } from "@/context/Global.context";
+import ModalShipping from "@/components/modals/ModalShipping";
 
 const OrderPage = () => {
   const ref = useRef<any>();
   const { setForm, form } = useContext(GlobalContext);
+  const [modalIsOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     ref.current.insertAdjacentHTML(
@@ -116,9 +118,15 @@ const OrderPage = () => {
                 });
               }}
             />
-            <button className={style.order__button} onClick={() => {}}>
+            <button
+              className={style.order__button}
+              onClick={() => {
+                setIsOpen(true);
+              }}
+            >
               about shipping
             </button>
+            <ModalShipping modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
           </div>
           <h1 className={style.order__title}>Payment Details</h1>
           <div className={style.order__payment}>

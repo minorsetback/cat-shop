@@ -56,6 +56,7 @@ const CartPromoCode = () => {
                       color: "gray",
                       cursor: "pointer",
                       marginLeft: "20px",
+                      padding: "3px",
                     }}
                     onClick={() => deleteCode(item)}
                   >
