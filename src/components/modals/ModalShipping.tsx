@@ -38,8 +38,11 @@ const ModalShipping = ({
         shouldCloseOnOverlayClick={true}
         overlayClassName="modal"
       >
-        <h1 style={{ textAlign: "center", marginTop: "80px" }}>Hi there</h1>
-        <p>To get discount enter GETDISCOUNT</p>
+        <div style={{ cursor: "pointer" }} onClick={closeModal}>
+          &#9587;
+        </div>
+        <h1 style={{ textAlign: "center", marginTop: "30px" }}>Hi there</h1>
+        <p style={{ textAlign: "center" }}>To get discount enter GETDISCOUNT</p>
       </Modal>
     </>
   );
