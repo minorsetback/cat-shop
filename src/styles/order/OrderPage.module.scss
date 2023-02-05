@@ -163,6 +163,19 @@
 }
 
 
+.order__cartEmpty {
+    font-family: "NeueHaasUnicaLight";
+    font-style: normal;
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+    width: 236px;
+    margin: 0 auto;
+  }
+
+
 @media screen and (max-width: 1440px) and (min-width:768px){
     .order__main{
         display: block;

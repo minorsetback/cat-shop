@@ -22,7 +22,7 @@ const OrderPage = () => {
   const ref = useRef<any>();
   const { setForm, form } = useContext(GlobalContext);
   const [modalIsOpen, setIsOpen] = useState(false);
-
+  const { cart } = useContext(GlobalContext);
   useEffect(() => {
     ref.current.insertAdjacentHTML(
       "afterend",
@@ -105,7 +105,7 @@ const OrderPage = () => {
               onChange={(e) => {
                 setForm({
                   ...form,
-                  delivery: e.target.checked ? 10.00 : 0,
+                  delivery: e.target.checked ? 10.0 : 0,
                 });
               }}
             />
@@ -115,7 +115,7 @@ const OrderPage = () => {
               onChange={(e) => {
                 setForm({
                   ...form,
-                  delivery: e.target.checked ? 25.30 : 0,
+                  delivery: e.target.checked ? 25.3 : 0,
                 });
               }}
             />
@@ -138,8 +138,17 @@ const OrderPage = () => {
         <div className={style.order__info}>
           <h1 className={style.order__title}>Your order</h1>
           <div className={style.order__cart}>
-            <CartContent />
-            <CartCheckout />
+            {cart.length > 0 && (
+              <>
+                <CartContent />
+                <CartCheckout />
+              </>
+            )}
+            {cart.length === 0 && (
+              <p className={style.order__cartEmpty}>
+                There’s nothing for your poor cat in your cart!
+              </p>
+            )}
           </div>
           <Button variant="black" text="Pay now" />
           <CartAdvertising />
