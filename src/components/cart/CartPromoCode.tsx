@@ -52,7 +52,11 @@ const CartPromoCode = () => {
                 <span key={index} className={style.promo__code}>
                   {item}
                   <span
-                    style={{ color: "gray", cursor: "pointer" }}
+                    style={{
+                      color: "gray",
+                      cursor: "pointer",
+                      marginLeft: "20px",
+                    }}
                     onClick={() => deleteCode(item)}
                   >
                     X
