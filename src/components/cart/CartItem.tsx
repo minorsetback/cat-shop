@@ -2,7 +2,15 @@ import useProducts from "@/hooks/useProducts";
 import styles from "@/styles/cart/CartItem.module.scss";
 import Image from "next/image";
 
-const CartItem = ({ item }: { item: any }) => {
+type CartType = {
+  id: number;
+  title: string;
+  count: number;
+  img: any;
+  price: number;
+};
+
+const CartItem = ({ item }: { item: CartType }) => {
   const { decrement, increment } = useProducts();
 
   return (

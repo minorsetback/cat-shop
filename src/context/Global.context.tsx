@@ -9,11 +9,29 @@ type Provider<Elements = void> = React.FC<{
   };
 }>;
 
+type FormType = {
+  email: string;
+  first_name: string;
+  last_name: string;
+  phone: string | undefined;
+  country: string;
+  address: string;
+  delivery: string;
+};
+
+type CartType = {
+  id: number;
+  title: string;
+  count: number;
+  img: any;
+  price: number;
+};
+
 export type GlobalState = {
-  cart: Array<any>;
-  setCart: Dispatch<SetStateAction<Array<any>>>;
-  form: any;
-  setForm: Dispatch<SetStateAction<any>>;
+  cart: Array<CartType>;
+  setCart: Dispatch<SetStateAction<Array<CartType>>>;
+  form: FormType;
+  setForm: Dispatch<SetStateAction<FormType>>;
 };
 
 const initialState: GlobalState = {
@@ -49,8 +67,8 @@ const initialState: GlobalState = {
 export const GlobalContext = React.createContext(initialState);
 
 export const GlobalProvider: Provider = ({ children }) => {
-  const [cart, setCart] = React.useState<Array<any>>(initialState.cart);
-  const [form, setForm] = React.useState<any>(initialState.form);
+  const [cart, setCart] = React.useState<Array<CartType>>(initialState.cart);
+  const [form, setForm] = React.useState<FormType>(initialState.form);
   return (
     <GlobalContext.Provider value={{ form, setForm, cart, setCart }}>
       {children}

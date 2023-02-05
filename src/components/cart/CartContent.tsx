@@ -5,16 +5,10 @@ import CartPromoCode from "./CartPromoCode";
 
 const CartContent = () => {
   const { cart } = useContext(GlobalContext);
-  const [data, setData] = useState<any>([]);
-
-  useEffect(() => {
-    setData(cart);
-    console.log(cart)
-  }, [cart]);
 
   return (
     <>
-      {data.map((item: any) => (
+      {cart.map((item: any) => (
         <CartItem key={item.id} item={item} />
       ))}
       <CartPromoCode />
