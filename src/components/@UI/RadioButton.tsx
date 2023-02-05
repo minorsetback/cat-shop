@@ -4,15 +4,18 @@ const RadioButton = ({
   title,
   price,
   onChange,
+  defaultChecked,
 }: {
   title: string;
   price: number;
   onChange?: (item: any) => void;
+  defaultChecked?: boolean;
 }) => {
   return (
     <div className={style.radio}>
       <input
         type="radio"
+        defaultChecked={defaultChecked}
         className={style.radio__input}
         name="radio"
         onChange={onChange}

@@ -90,11 +90,12 @@ const OrderPage = () => {
           <div className={style.order__shipping}>
             <RadioButton
               title="Free Shipping"
+              defaultChecked={true}
               price={0}
               onChange={(e) => {
                 setForm({
                   ...form,
-                  delivery: e.target.checked ? "Free Shipping" : "",
+                  delivery: e.target.checked ? 0 : 0,
                 });
               }}
             />
@@ -104,7 +105,7 @@ const OrderPage = () => {
               onChange={(e) => {
                 setForm({
                   ...form,
-                  delivery: e.target.checked ? "Standard Shipping" : "",
+                  delivery: e.target.checked ? 10.00 : 0,
                 });
               }}
             />
@@ -114,7 +115,7 @@ const OrderPage = () => {
               onChange={(e) => {
                 setForm({
                   ...form,
-                  delivery: e.target.checked ? "Express Shipping" : "",
+                  delivery: e.target.checked ? 25.30 : 0,
                 });
               }}
             />

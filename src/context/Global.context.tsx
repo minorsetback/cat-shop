@@ -16,7 +16,7 @@ type FormType = {
   phone: string | undefined;
   country: string;
   address: string;
-  delivery: string;
+  delivery: number;
 };
 
 type CartType = {
@@ -32,6 +32,8 @@ export type GlobalState = {
   setCart: Dispatch<SetStateAction<Array<CartType>>>;
   form: FormType;
   setForm: Dispatch<SetStateAction<FormType>>;
+  promo: Array<string>;
+  setPromo: Dispatch<SetStateAction<Array<string>>>;
 };
 
 const initialState: GlobalState = {
@@ -59,9 +61,11 @@ const initialState: GlobalState = {
     phone: "",
     country: "Ukraine",
     address: "",
-    delivery: "",
+    delivery: 0,
   },
   setForm: () => {},
+  promo: ["FREECODE", "TESTCODE"],
+  setPromo: () => {},
 };
 
 export const GlobalContext = React.createContext(initialState);
@@ -69,8 +73,12 @@ export const GlobalContext = React.createContext(initialState);
 export const GlobalProvider: Provider = ({ children }) => {
   const [cart, setCart] = React.useState<Array<CartType>>(initialState.cart);
   const [form, setForm] = React.useState<FormType>(initialState.form);
+  const [promo, setPromo] = React.useState<Array<string>>(initialState.promo);
+
   return (
-    <GlobalContext.Provider value={{ form, setForm, cart, setCart }}>
+    <GlobalContext.Provider
+      value={{ form, setForm, cart, setCart, promo, setPromo }}
+    >
       {children}
     </GlobalContext.Provider>
   );

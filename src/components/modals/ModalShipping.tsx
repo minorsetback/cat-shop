@@ -39,6 +39,7 @@ const ModalShipping = ({
         overlayClassName="modal"
       >
         <h1 style={{ textAlign: "center", marginTop: "80px" }}>Hi there</h1>
+        <p>To get discount enter GETDISCOUNT</p>
       </Modal>
     </>
   );

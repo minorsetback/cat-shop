@@ -1,10 +1,11 @@
+import { GlobalContext } from "@/context/Global.context";
 import style from "@/styles/cart/CartPromoCode.module.scss";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 const CartPromoCode = () => {
   const [show, setShow] = useState(false);
-  const [promo, setPromo] = useState<Array<string>>([]);
   const [inputValue, setInputValue] = useState<string>("");
+  const { promo, setPromo } = useContext(GlobalContext);
 
   const deleteCode = (item: string) => {
     const index = promo.indexOf(item);
@@ -52,15 +53,10 @@ const CartPromoCode = () => {
                 <span key={index} className={style.promo__code}>
                   {item}
                   <span
-                    style={{
-                      color: "gray",
-                      cursor: "pointer",
-                      marginLeft: "20px",
-                      padding: "3px",
-                    }}
                     onClick={() => deleteCode(item)}
+                    className={style.promo__x}
                   >
-                    X
+                    &#215;
                   </span>
                 </span>
               ))}

@@ -6,12 +6,13 @@ const useProducts = () => {
 
   const decrement = (id: number) => {
     const newCart = cart.map((item) => {
-      if (item.id === id && item.count > 1) {
+      if (item.id === id) {
         return { ...item, count: (item.count -= 1) };
       }
       return item;
     });
-    setCart(newCart);
+
+    setCart(newCart.filter((item) => item.count !== 0));
   };
 
   const increment = (id: number) => {

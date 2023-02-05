@@ -51,6 +51,8 @@
 }
 .promo__input {
   border: 1px solid #a0a0a0;
+  padding: 7px 8px;
+
   border-radius: 2px;
   width: 203px;
 }
@@ -58,8 +60,13 @@
 .promo__code {
   background: #f1eee9;
   border-radius: 12px;
-  padding: 2px 9px;
+  padding: 5px 9px 4px 9px;
   margin-right: 10px;
+  font-family: "NeueHaasUnicaThin";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 25px;
 }
 
 .promo__codes {
@@ -68,4 +75,11 @@
 
 .promo__codes::-webkit-scrollbar {
   display: none;
+}
+
+.promo__x {
+  cursor: pointer;
+  margin-left: 10px;
+  width: 3px;
+  height: 3px;
 }
