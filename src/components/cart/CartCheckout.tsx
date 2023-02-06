@@ -14,37 +14,40 @@ const CartCheckout = () => {
     return discount ? price * (1 - discount) : price;
   };
 
+  const subtotal = calc().toFixed(2);
+
+  const discount = promo.includes("GETDISCOUNT")
+    ? -(calc() - calc(0.05)).toFixed(2)
+    : "$" + (0).toFixed(2);
+
+  const shipping =
+    router.pathname === "/"
+      ? "calculated next step"
+      : "$" + form.delivery.toFixed(2);
+      
+  const total = promo.includes("GETDISCOUNT")
+    ? calc(0.05).toFixed(2)
+    : calc().toFixed(2);
+
   return (
     <div>
       <div className={style.checkout__block}>
         <span className={style.checkout__title}>Subtotal</span>
-        <span className={style.checkout__price}>${calc().toFixed(2)}</span>
+        <span className={style.checkout__price}>${subtotal}</span>
       </div>
       <div className={style.checkout__block}>
         <span className={style.checkout__title}>Shipping</span>
-        <span className={style.checkout__price}>
-          {router.pathname === "/"
-            ? "calculated next step"
-            : "$" + form.delivery.toFixed(2)}
-        </span>
+        <span className={style.checkout__price}>{shipping}</span>
       </div>
       <div className={style.checkout__block}>
         <span className={style.checkout__title}>Discounts</span>
-        <span className={style.checkout__price}>
-          {promo.includes("GETDISCOUNT")
-            ? -(calc() - calc(0.05)).toFixed(2)
-            : "$" + (0).toFixed(2)}
-        </span>
+        <span className={style.checkout__price}>{discount}</span>
       </div>
       <div className={style.checkout__block} style={{ marginTop: "36px" }}>
         <span className={style.checkout__total}>TOTAL</span>
         <div>
           <span className={style.checkout__currency}>AUD</span>
-          <span className={style.checkout__totalPrice}>
-            {promo.includes("GETDISCOUNT")
-              ? calc(0.05).toFixed(2)
-              : calc().toFixed(2)}
-          </span>
+          <span className={style.checkout__totalPrice}>{total}</span>
         </div>
       </div>
     </div>
